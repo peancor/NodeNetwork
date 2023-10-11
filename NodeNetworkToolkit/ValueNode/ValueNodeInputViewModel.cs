@@ -32,7 +32,7 @@ namespace NodeNetwork.Toolkit.ValueNode
         /// If the input is not connected, the value is taken from ValueEditorViewModel.Value in the Editor property.
         /// If the input is connected, the value is taken from ValueNodeOutputViewModel.LatestValue unless the network is not traversable.
         /// Note that this value may be equal to default(T) if there is an error somewhere.
-        /// </summary>
+        /// </summary>        
         public T Value => _value.Value;
         private readonly ObservableAsPropertyHelper<T> _value;
         #endregion
